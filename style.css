@@ -1,0 +1,27 @@
+.panels{
+    display: flex;
+    min-height: 100vh;
+
+    
+}
+.panel{
+    
+    border: 3px solid black;
+    color: white;
+    width: 100vh;
+    box-shadow: 0 0 25px white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-position: center;
+    background-size: cover;
+    /*transition:flex 0.7s linear;*/
+}
+.open{
+    flex:5;
+}
+.transition{
+    transition: flex 0.7s linear;
+}

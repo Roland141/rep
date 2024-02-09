@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asd</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .card {
+            text-align: center;
+            justify-content: center;
+            width: 180px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="joel-vodell-8Ogfqvw15Rg-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fontosabb adatok</h5>
+                    <p class="card-text">Age:19</p>
+                    <p>Sex:Male</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="joel-vodell-8Ogfqvw15Rg-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fontosabb adatok</h5>
+                    <p class="card-text">Age:19</p>
+                    <p>Sex:Male</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="joel-vodell-8Ogfqvw15Rg-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fontosabb adatok</h5>
+                        <p class="card-text">Age:19</p>
+                        <p>Sex:Male</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+</body>
+
+</html>
+export const getData=async(url,renderFc)=>{
+    const response=await fetch(url)
+    const data=await response.json()
+    renderFc(data)
+}
